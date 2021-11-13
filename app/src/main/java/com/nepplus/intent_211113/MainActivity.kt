@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
 //    멤버 변수
     val REQ_FOR_NICKNAME = 1000
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
