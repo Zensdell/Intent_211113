@@ -22,12 +22,14 @@
         android:text="다른 화면으로 이동"/>
 
     <EditText
+        android:id="@+id/edtMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="아무말이나 써 보아요"
         />
 
     <Button
+        android:id="@+id/btnSendMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="문구 전송 버튼"/>

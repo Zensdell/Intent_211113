@@ -18,6 +18,22 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
+        btnSendMessage.setOnClickListener {
+
+//            ViewMessageActivity 화면으도 이동하기 + 입력한 문구도 가지고 이동하기
+
+//            1. 입력한 내용을 기록해두자 (변수에 담아두자)
+
+            val inputMessage = edtMessage.text.toString()
+            val myIntent = Intent(this,ViewMessageActivity::class.java)
+//             inputMessage에 담긴 내용을 myIntent에 첨부
+
+            myIntent.putExtra("message",inputMessage)
+            startActivity(myIntent)
+
+
+        }
+
 
 
     }
