@@ -16,6 +16,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        btnNaverWebLink.setOnClickListener {
+
+            val myUri = Uri.parse("https://www.naver.com/")
+            val myIntent = Intent(Intent.ACTION_VIEW,myUri)
+            startActivity(myIntent)
+
+        }
+
+        btnSms.setOnClickListener {
+
+            val inputPhoneNum = edtPhoneNum.text.toString()
+
+            val myUri = Uri.parse("smsto:${inputPhoneNum}")
+            val myIntent = Intent(Intent.ACTION_SENDTO,myUri)
+            myIntent.putExtra("sms_body","이 문자는 자동입력입니다.")
+            startActivity(myIntent)
+        }
+
+
         btnCall.setOnClickListener {
 
             val inputPhoneNum = edtPhoneNum.text.toString()

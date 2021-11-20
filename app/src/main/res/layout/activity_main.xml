@@ -127,4 +127,16 @@
         android:text="전화 걸기 (CALL)"/>
 
 
+    <Button
+        android:id="@+id/btnSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문자 보내기 (SENDTO)"/>
+
+    <Button
+        android:id="@+id/btnNaverWebLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이버 사이트 연결 (VIEW))"/>
+
 </LinearLayout>
