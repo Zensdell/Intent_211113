@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
 //            그 전화번호에 실제전화 연결 (DIAL)
 
-            val myUri = Uri.parse("tel:01055556666")
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
             val myIntent = Intent(Intent.ACTION_DIAL,myUri)
             startActivity(myIntent)
 
